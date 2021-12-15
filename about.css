@@ -176,6 +176,9 @@ span{
 
 
 @media only screen and (max-width: 1024px){
+    #responsive{
+        margin-left: 122%;
+    }
     .detel{
         margin-left: 6%;
     }   
@@ -188,9 +191,7 @@ span{
         width: 100%;
         height: 5%;
     }
-   #responsive{
-       margin-right: 150%;
-   }
   
+   
     
 }
