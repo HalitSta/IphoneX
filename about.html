@@ -17,13 +17,18 @@
     <!-- Nav menu at the top right -->
 
     <div class="hero">
-        <nav>
-            <a href="index.html"><img src="images/logo.png" class="logo"></a>
-            <ul style="font-size: 20px;">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="asgmt.html">ASGMT</a></li>
-                <li><a href="socialmedia.html">SOCIAL MEDIA</a></li>
+        <nav class="navbar">
+            <div class="title"><a href="index.html"><img src="images/logo.png" class="logo"></a></div>
+            <div class="ham">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            <ul class="nav-sub">
+                <li class="list-item"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="list-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li class="list-item"><a href="asgmt.html" class="nav-link">ASGMT</a></li>
+                <li class="list-item"><a href="index.html" class="nav-link">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -37,7 +42,7 @@
                 Developer, eCommerce & Marketing, space lover I live in Podujeva/Prishtina.<br> I was born in
                 Prishtina, Kosovo and my origin is from Sanxhak Nish, I was counted to<br> be one of the first
                 Youtube-r on Albanian Community
-                <a href="images/Halit_Statovci_-_ (CV) (1).pdf" style="margin-left: 550px ;">My CV</a>
+                <a href="images/Halit_Statovci_-_ (CV) (1).pdf" style="margin-left: 550px ;" id="responsive">My CV</a>
             </p>
         </div>
 
@@ -53,15 +58,23 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <p class="footer-links">
-                <a class="link-1" style="color: white;"> © 2021 - Universum College - All rights reserved - By: Halit
-                    Sta</a>
-                </p>
-        </div>
-    </footer>
+    <div class="footer">
+        <footer class="text-center text-lg-start bg-light text-muted" style="margin-top: 17.8%;" id="footer">
+            <!-- Copyright -->
+            <div class="text-center p-4">
+                © 2021 - Universum College - All rights reserved - By: Halit Sta
 
+            </div>
+        </footer>
+    </div>
+    <script>
+        const hamburger = document.querySelector(".ham");
+        const navsub = document.querySelector(".nav-sub");
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle("change")
+            navsub.classList.toggle("nav-change")
+        });  
+    </script>
 
 </body>
 </html>
